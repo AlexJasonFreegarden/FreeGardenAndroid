@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FreeGarden</string>
+    <string name="titleTitle"><u>Chose a title !</u></string>
+    <string name="addressTitle"><u>Your address</u></string>
+    <string name="limitationTitle"><u>Limitation</u></string>
+    <string name="limitation">How many users can your garden accept ?</string>
+    <string name="registerGardenButton">Register !</string>
+    <string name="newAccountActivityTitle">New account</string>
+    <string name="newGardenMainTitle">Register a new garden !</string>
+    <string name="mainMenuTitle">FreeGarden</string>
+    <string name="loginLabel">Login :</string>
+    <string name="passwordLabel">Password :</string>
+    <string name="createNewAccountButton">Create a new account</string>
+    <string name="goalmainTitle">Goal</string>
+</resources>
