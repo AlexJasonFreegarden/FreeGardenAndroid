@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewAccountActivity" />
-        <activity android:name=".NewUserGoal" />
-        <activity android:name=".Profile" />
+        <activity android:name=".NewUserGoalActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".GardenRegisterActivity" />
     </application>
 

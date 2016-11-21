@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity
     {
         Intent explicitIntent = new Intent(this, NewAccountActivity.class);
         final Intent msg = explicitIntent.putExtra("msg", "Données trop classes");
-        startActivityForResult(explicitIntent, 1);}
+        startActivityForResult(explicitIntent, 1);
+    }
 }

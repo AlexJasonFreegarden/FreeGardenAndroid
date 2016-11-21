@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.henallux.freegarden.NewUserGoal">
+    tools:context="com.henallux.freegarden.NewUserGoalActivity">
 
     <!--Layout general-->
     <android.support.v7.widget.LinearLayoutCompat
@@ -40,11 +40,12 @@
                 android:layout_weight="60">
                 <Button
                     android:id="@+id/findGardenButton"
-                    android:text="I wnat to find a garden"
+                    android:text="I want to find a garden"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="40"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:onClick="findGardenNewGoal"/>
                 <android.support.v4.widget.Space
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -55,7 +56,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="40"
-                    android:textAllCaps="false"/>
+                    android:textAllCaps="false"
+                    android:onClick="registerNewGarden"/>
             </android.support.v7.widget.LinearLayoutCompat>
             <android.support.v4.widget.Space
                 android:layout_width="0dp"
