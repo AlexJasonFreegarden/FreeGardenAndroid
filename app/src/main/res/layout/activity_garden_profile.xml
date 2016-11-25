@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_new_account"
+    android:id="@+id/activity_garden_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.henallux.freegarden.NewAccountActivity">
+    tools:context="com.henallux.freegarden.GardenProfile">
 
     <!--Layout general-->
     <android.support.v7.widget.LinearLayoutCompat
@@ -17,10 +17,10 @@
         android:orientation="vertical">
         <!--Titre de l'activité-->
         <TextView
-            android:text="@string/newAccountActivityTitle"
+            android:text="@string/mainMenuTitle"
             android:textSize="@dimen/mainTitleTextSize"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="20"/>
         <!--Layout horizontal englobant les différents champs-->
@@ -35,163 +35,123 @@
                 android:layout_weight="0"/>
             <ScrollView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="100">
                 <android.support.v7.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <TextView
-                            android:text="First name* :"
+                            android:text="@string/owner"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:labelFor="@+id/firstNameInput"
-                            android:layout_weight="50"/>
-                        <EditText
-                            android:id="@+id/firstNameInput"
+                            />
+                        <TextView
+                            android:id="@+id/ownerText"
+                            android:text="/"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="First name"
-                            android:inputType="textPersonName"
-                            android:layout_weight="50"/>
+                            android:layout_weight="60"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/labelMargin"
                         android:orientation="horizontal">
                         <TextView
-                            android:text="Last name* :"
+                            android:text="@string/address"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:labelFor="@+id/lastNameInput"
-                           android:layout_weight="50"/>
-                        <EditText
-                            android:id="@+id/lastNameInput"
+                            />
+                        <TextView
+                            android:id="@+id/adrressText"
+                            android:text="/"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Last name"
-                            android:inputType="textPersonName"
-                            android:layout_weight="50"/>
+                            android:layout_weight="60"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/labelMargin"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/emailLabel"
+                            android:text="@string/description"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Email* :"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:gravity="center_vertical"
-                            android:layout_weight="50" />
-                        <EditText
-                            android:id="@+id/emailInput"
+                            />
+                        <TextView
+                            android:id="@+id/DescriptionText"
+                            android:text="/"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:hint="Email"
-                            android:inputType="textEmailAddress"
-                            android:layout_weight="50" />
+                            android:layout_height="150dp"
+                            android:layout_weight="60" />
                     </android.support.v7.widget.LinearLayoutCompat>
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/labelMargin"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/birthdayLabel"
+                            android:text="@string/surface"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Birthday* :"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:layout_weight="50" />
-                        <EditText
-                            android:id="@+id/birthdayInput"
+                            />
+                        <TextView
+                            android:id="@+id/surfaceText"
+                            android:text="/"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Birthday"
-                            android:inputType="date"
-                            android:layout_weight="50" />
+                            android:layout_weight="60"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/labelMargin"
                         android:orientation="horizontal">
                         <TextView
+                            android:text="@string/email"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Phone number :"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:labelFor="@+id/phoneNumberInput"
-                            android:layout_weight="50"/>
-                        <EditText
-                            android:id="@+id/phoneNumberInput"
-                            android:inputType="phone"
+                            />
+                        <TextView
+                            android:id="@+id/emailText"
+                            android:text="/"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="0000000000"
-                            android:layout_weight="50" />
+                            android:layout_weight="60"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/labelMargin"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/newPasswordLabel"
+                            android:text="@string/telephoneNumber"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Password* :"
+                            android:layout_weight="40"
                             android:textSize="@dimen/labelTextSize"
-                            android:layout_weight="50"/>
-                        <EditText
-                            android:id="@+id/newPasswordInput"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:hint="Password"
-                            android:inputType="textPassword"
-                            android:layout_weight="50" />
-                        </android.support.v7.widget.LinearLayoutCompat>
-                    <android.support.v7.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                            />
                         <TextView
+                            android:text="/"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="Password confirmation* :"
-                            android:textSize="@dimen/labelTextSize"
-                            android:layout_weight="50"
-                            android:layout_marginBottom="3dp"/>
-                        <EditText
-                            android:id="@+id/newPasswordConfirmationInput"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:hint="Password confirmation"
-                            android:inputType="textPassword"
-                            android:layout_weight="50" />
-                    </android.support.v7.widget.LinearLayoutCompat>
-                    <android.support.v7.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="20dp">
-                        <android.support.v4.widget.Space
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"/>
-                        <Button
-                            android:id="@+id/signUpButton"
-                            android:text="Sign up !"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:layout_marginRight="10dp"
-                            android:onClick="signUp"/>
+                            android:layout_weight="60"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                 </android.support.v7.widget.LinearLayoutCompat>
             </ScrollView>
@@ -200,9 +160,25 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0"/>
         </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="10">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"/>
+            <Button
+                android:text="@string/groupRequest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:textAllCaps="false"/>
+        </android.support.v7.widget.LinearLayoutCompat>
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0"/>
+            android:layout_weight="10"/>
     </android.support.v7.widget.LinearLayoutCompat>
 </RelativeLayout>

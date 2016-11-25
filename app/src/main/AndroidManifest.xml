@@ -19,6 +19,7 @@
         <activity android:name=".NewUserGoalActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".GardenRegisterActivity" />
+        <activity android:name=".GardenProfile"></activity>
     </application>
 
 </manifest>

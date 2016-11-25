@@ -34,17 +34,16 @@
         <android.support.v4.widget.Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="10"/>
+            android:layout_weight="0"/>
             <!--Layout vertical englobant les différents champs-->
             <ScrollView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="80">
+                android:layout_weight="100">
             <android.support.v7.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="80">
+                android:orientation="vertical">
                     <TextView
                         android:text="@string/titleTitle"
                         android:layout_width="wrap_content"
@@ -200,14 +199,15 @@
                             android:text="@string/registerGardenButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"/>
+                            android:layout_marginRight="10dp"
+                            android:textAllCaps="false"/>
                     </android.support.v7.widget.LinearLayoutCompat>
                 </android.support.v7.widget.LinearLayoutCompat>
             </ScrollView>
             <android.support.v4.widget.Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="10"/>
+                android:layout_weight="0"/>
         </android.support.v7.widget.LinearLayoutCompat>
     </android.support.v7.widget.LinearLayoutCompat>
 

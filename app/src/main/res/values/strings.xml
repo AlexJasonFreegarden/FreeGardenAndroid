@@ -12,4 +12,11 @@
     <string name="passwordLabel">Password :</string>
     <string name="createNewAccountButton">Create a new account</string>
     <string name="goalmainTitle">Goal</string>
+    <string name="owner"><u>Owner :</u></string>
+    <string name="address">Address :</string>
+    <string name="description"><u>Description : </u></string>
+    <string name="surface"><u>Surface : </u></string>
+    <string name="email"><u>Email : </u></string>
+    <string name="telephoneNumber"><u>Telephone number :</u></string>
+    <string name="groupRequest">Send a group request</string>
 </resources>
