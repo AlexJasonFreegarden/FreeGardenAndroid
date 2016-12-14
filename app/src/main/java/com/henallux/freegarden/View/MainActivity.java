@@ -1,12 +1,12 @@
-package com.henallux.freegarden;
+package com.henallux.freegarden.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.content.Intent;
+
+import com.henallux.freegarden.R;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
 
     public void newAccount(View v)
     {
-        Intent explicitIntent = new Intent(this, NewAccountActivity.class);
+        Intent explicitIntent = new Intent(this, TestActivity.class);
         final Intent msg = explicitIntent.putExtra("msg", "Données trop classes");
         startActivityForResult(explicitIntent, 1);
     }
